@@ -1,10 +1,9 @@
 .btn-group-vertical {
 	width: 100%;
 }
-.symlarge{font-size: 10em; text-align: center;}
+.symlarge {font-size: 10em; text-align: center;}
 .inv-birth{font-size: 0.01em; color:#FFF;}
-.inventory{font-size: 5em; color:#000;}
-.action{font-size: 2em;}
+.inventory{font-size: 5em;}
 pre {
 white-space: pre; /* CSS2 */
 white-space: -moz-pre-wrap; /* Mozilla */
@@ -18,3 +17,13 @@ word-wrap: break-word; /* IE */
 .panel{
 	margin: 0;
 }
+.btn-group-vertical > a > i {color: #aaf;}
+
+.sol-yellow	{color:#b58900;}
+.sol-orange	{color:#cb4b16;}
+.sol-red	{color:#dc322f;}
+.sol-magenta{color:#d33682;}
+.sol-violet	{color:#6c71c4;}
+.sol-blue	{color:#268bd2;}
+.sol-cyan	{color:#2aa198;}
+.sol-green	{color:#859900;}

@@ -1,9 +1,10 @@
 ---
 title: sceneStart
-class: well well-small text-muted
+class: well well-sm text-muted
+icon: eye-close
 links:
-- text: Продолжить
-  icon: chevron-right
+- text: Открыть глаза и пошевелиться
+  icon: eye-open
   goto: sceneIntro
 
 default: true

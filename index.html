@@ -7,9 +7,17 @@ title: Falling Apart
 {% for scene in site.posts %}
 	<div class="panel">
 		<div id="{{scene.title}}" class="collapse{% if scene.default %} in{% endif %}">
-			<h4 class="pull-right label label-primary">{{ scene.title }}</h4>
-			<div class="{{ scene.class }}">
-			{{ scene.content }}
+			<div class="row">
+				<div class="col-md-9">
+					<div class="{{ scene.class }}">
+					{{ scene.content }}
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="symlarge {{ scene.class }}">
+						<i class="icon-{{ scene.icon }}"></i>
+					</div>
+				</div>
 			</div>
 			<div class="btn-group-vertical">
 			{% for link in scene.links %}
@@ -24,6 +32,21 @@ title: Falling Apart
 		</div>
 	</div>
 {% endfor %}
+
+<!-- Инвентарь -->   
+		<div class="row">
+			<div class="col-md-12">
+			<ul class="nav nav-tabs" id="inventory">
+				
+				<li class="active">
+					<a href="#"><i class="inventory icon-male" style="color: #999"></i></a>
+				</li>
+				<li>
+					<a href="#"><i class="inventory icon-medkit"></i></a>
+				</li>
+			</ul>
+			</div>
+		</div>
 </div>
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
