@@ -16,4 +16,5 @@ I've run into several minor bugs because of the need of assembling this novel by
 
 ### Repository structure
 
-`master` branch contains original source, written at GeekParty. `gh-pages` contain the work-in-progress version of 
+* `master` branch contains original source, written at GeekParty.
+* `gh-pages` contain the work-in-progress version being rebuilt.
