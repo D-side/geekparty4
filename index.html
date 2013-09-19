@@ -3,26 +3,27 @@ layout: default
 title: Falling Apart
 ---
 
-<div id="home">
-	<div class="scenes">
-	{% for scene in site.posts %}
-		<div id="{{ scene.title }}" class="collapse{% if scene.default %} in{% endif %}">
+<div id="scenes">
+{% for scene in site.posts %}
+	<div class="panel">
+		<div id="{{scene.title}}" class="collapse{% if scene.default %} in{% endif %}">
 			<h4 class="pull-right label label-primary">{{ scene.title }}</h4>
 			<div class="{{ scene.class }}">
 			{{ scene.content }}
 			</div>
 			<div class="btn-group-vertical">
 			{% for link in scene.links %}
-					<a	class="btn btn-default btn-block"
-						data-toggle="collapse"
-						data-target="#{{ link.goto }}">
-						<i class="icon-{{link.icon}} icon-large"> </i>{{ link.text }}
-					</a>
+				<a	class="btn btn-default btn-block"
+				data-toggle="collapse"
+				data-parent="#scenes"
+				data-target="#{{ link.goto }}">
+					<i class="icon-{{ link.icon }} icon-large"> </i>{{ link.text }}
+				</a>
 			{% endfor %}
 			</div>
 		</div>
-    {% endfor %}
 	</div>
+{% endfor %}
 </div>
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>

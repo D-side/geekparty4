@@ -4,15 +4,7 @@ class: well well-small text-muted
 links:
 - text: Продолжить
   icon: chevron-right
-  goto: sceneNext
-
-- text: Забить
-  icon: remove
-  goto: sceneNext
-
-- text: Что это?
-  icon: question
-  goto: sceneNext
+  goto: sceneIntro
 
 default: true
 ---
