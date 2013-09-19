@@ -5,7 +5,7 @@ date:   2013-09-19 12:04:42
 categories: jekyll update
 links:
 - text: Продолжить
-  icon: eye-closed
+  icon: eye-close
   goto: sceneNext
 - text: Забить
   icon: remove
