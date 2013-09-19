@@ -14,6 +14,7 @@ links:
   icon: question
   goto: sceneNext
 
+default: true
 ---
 
 Прохлада.
