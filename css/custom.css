@@ -1,3 +1,17 @@
 .btn-group-vertical {
 	width: 100%;
 }
+.symlarge{font-size: 10em; text-align: center;}
+.inv-birth{font-size: 0.01em; color:#FFF;}
+.inventory{font-size: 5em; color:#000;}
+.action{font-size: 2em;}
+pre {
+white-space: pre; /* CSS2 */
+white-space: -moz-pre-wrap; /* Mozilla */
+white-space: -hp-pre-wrap; /* HP printers */
+white-space: -o-pre-wrap; /* Opera 7 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: pre-wrap; /* CSS 2.1 */
+white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+word-wrap: break-word; /* IE */
+}

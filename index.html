@@ -7,8 +7,7 @@ title: Your New Jekyll Site
 	<h1>Blog Posts</h1>
 	<div class="posts">
 	{% for post in site.posts %}
-		<li>
-		<a href="{{ post.url }}">{{ post.title }}</a>
+		<h4">{{ post.title }}</h4>
 		{{ post.content }}
 		<div class="btn-group-vertical">
 		{% for link in post.links %}
@@ -22,3 +21,7 @@ title: Your New Jekyll Site
     {% endfor %}
 	</div>
 </div>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/actions.js"></script>
