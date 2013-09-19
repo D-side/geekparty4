@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>На разбитом судне</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+	<link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+		.symlarge{font-size: 10em; text-align: center;}
+		.inv-birth{font-size: 0.01em; color:#FFF;}
+		.inventory{font-size: 5em; color:#000;}
+		.action{font-size: 2em;}
+		pre {white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap: break-word;}
+		.well-small{color: #777 !important;}
+    </style>
+  </head>
+  <body>
+    <!-- Контейнер всей страницы (Bootstrap) -->
+	<div class="container">
+	<hr/>
+    <div class="accordion" id="main">
+
+      <!-- sceneStart -->
+		<div class="accordion-group">
+        <div id="sceneStart" class="collapse in">	
+				<div class="row">
+					<div class="span9">
+						<div class="alert alert-info">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							<h3>Прохлада.</h3>
+
+							<h4>Тело будто погружено во что-то... как воздух, но поплотнее. Кажется, я стою, но под ногами ничего нет.</h4>
+
+							<h4>Вокруг просто гробовая тишина, и никаких воспоминаний о том, что произошло вчера... и позавчера... и...</h4>
+							<h4>Нет, проще вспомнить, что было последним. Поезд на орбитальном тросе... Что-то слишком круто, я проспал какую-то научно-техническую революцию? Кажется, это было ещё пару дней назад. Скафандр. Грузовой контейнер. И темнота... Проклятье, память в дырах, просто как решето.</h4>
+							<h4>Неважно, нужно выяснять, что происходит.</h4>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="well well-small symlarge">
+							<i class="icon-eye-close"></i>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="span12">
+						<ul class="nav nav-tabs nav-stacked">
+						
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneIntro">
+									<i class="icon-eye-open action"> </i>Открыть глаза и пошевелиться
+								</a>
+						  </li>
+						  
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->
+      
+      <!-- sceneIntro -->
+		<div class="accordion-group">
+        <div id="sceneIntro" class="collapse">	
+				<div class="row">
+					<div class="span9">
+						<div class="alert">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							<h4>Темнота. И, кажется, на мне скафандр. Это хорошо, от чего-то он может и защитить. Надеюсь, он не развалится? Впрочем, в этом случае мне уже будет всё равно, что происходит и произойдёт потом.</h4>
+							<h4>Хорошо, поезд на орбите - куда он мог следовать? Чёрт, да я, может быть, в открытом космосе! А что это означает? Что либо то, в чём я нахожусь, кто-то подберёт, либо мне конец! Учитывая космические масштабы, куда вероятнее первое. Чёрт!</h4>
+							<h3>НЕ ПАНИКОВАТЬ!</h3>
+							<h4>Возможно, всё не так уж плохо. Кажется, тело слегка тянет вниз, то есть, тут хотя бы есть гравитация. Не земная, но и не нулевая. Либо это другая планета, либо это какой-то корабль. Хотя откуда на корабле гравитация?.. Хм, ну нет, это возможно. Если корабль вращается вокруг центральной оси, по внешней обшивке вполне можно ходить.</h4>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="well well-small symlarge">
+							<i class="icon-eye-open"></i>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="span12">
+						<ul class="nav nav-tabs nav-stacked">
+						
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneIfShip">
+									<i class="icon-rocket action"> </i> Я на корабле?
+								</a>
+						  </li>
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneIfPlanet">
+									<i class="icon-circle action"> </i> Я на другой планете?
+								</a>
+						  </li>
+						  
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->
+      
+      <!-- sceneIfShip -->
+		<div class="accordion-group">
+        <div id="sceneIfShip" class="collapse">	
+				<div class="row">
+					<div class="span9">
+						<div class="alert alert-success">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							<h3>Предположим, что корабль...</h3>
+							<h4>В принципе, против этого версий нет. Разве что сбивает с толку гравитация, но почему бы и нет? Когда будет сколько-нибудь большое пространство, нужно будет посмотреть на форму. На корабле можно ходить по внутренней поверхности, а на планете только по внешней.</h4>
+							<h4>Вокруг подозрительно тихо. Не слышно даже двигателей. Либо корабль стоит на месте, либо здесь звукоизоляция.</h4>
+							<h4>Если думать в таком темпе и дальше, с катушек съехать недолго от безысходности. Надо что-то делать.</h4>
+							<h4>Руки и ноги свободно двигаются, но под ногами пусто. Как так?</h4>
+
+						</div>
+					</div>
+					<div class="span3">
+						<div class="well well-small symlarge">
+							<i class="icon-eye-open"></i>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="span12">
+						<ul class="nav nav-tabs nav-stacked">
+						
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneAIshout">
+									<i class="icon-volume-up action"> </i> Крикнуть
+								</a>
+						  </li>
+						  
+								  
+						  
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->
+      
+      <!-- sceneAIshout -->
+		<div class="accordion-group">
+        <div id="sceneAIshout" class="collapse">	
+				<div class="row">
+					<div class="span9">
+						<div class="alert">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							<h4>Кричать тут - оглохнуть можно, скафандр вроде должен передавать звук наружу?</h4>
+<h3>Есть тут кто?</h3>
+<h4></h4>
+<pre>Добрый вечер!
+В ваш шлем встроен микрофон, подключенный к моему интерфейсу.
+Я - встроенный в ваш скафандр искуственный интеллект класса "Спутник". Идентификационный номер...</pre>
+<h4>Вечер? Серьёзно? Ладно, может, расскажешь, что тут за ерунда происходит?</h4>
+<pre>Прервано.
+Неизвестное понятие: "ерунда". Контекстное предположение: пользователь интересуется происходящим.
+Жизненные показатели в норме, однако наблюдаются признаки обширной амнезии.</pre>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="well well-small symlarge">
+							<i class="icon-bullseye"></i>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="span12">
+						<ul class="nav nav-tabs nav-stacked">
+						
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneAIshout2">
+									<i class="icon-chevron-sign-right action"> </i>
+								</a>
+						  </li>						  
+						  
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->
+      
+		<!-- sceneAIshout2 -->
+		<div class="accordion-group">
+        <div id="sceneAIshout2" class="collapse">	
+				<div class="row">
+					<div class="span9">
+						<div class="alert alert-info">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							<h4>Это я и сам заметил.</h4>
+							<pre>В радиусе примерно 10 метров опасностей для скафандра и носителя не обнаружено.
+Обнаружен информационный интерфейс. Метаидентификатор: "Грузовой контейнер #82".
+Доступ к датчикам триангуляции...
+Доступ получен. Вы внутри грузового контейнера.
+Доступ к акту перевозки...
+Доступ получен.
+Подпись: Земной Космофлот.
+Место назначения: неизвестно.</pre>
+							<h4>Подожди, космофлот?! Чёрт, долго же я тут уже сплю.</h4>
+							<pre>Прервано.
+Если считать наличие признаков амнезии не посылкой, а следствием реальных фактов, то вы можете не помнить значительного промежутка собственной жизни. Со временем память может возвращаться.
+Вы в стрессовом состоянии. Уведомляю, что опасности нет.
+Ожидаю запроса пользователя...</pre>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="well well-small symlarge">
+							<i class="icon-eye-close"></i>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="span12">
+						<ul class="nav nav-tabs nav-stacked">
+						
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneAIshout3">
+									<i class="icon-question-sign action"> </i>Спросить о цели полёта
+								</a>
+						  </li>
+						  
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->  
+      
+      <!-- sceneAIshout3 -->
+		<div class="accordion-group">
+        <div id="sceneAIshout3" class="collapse">	
+				<div class="row">
+					<div class="span9">
+						<div class="alert">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+<h4>Значит, космофлот. Корабль вполне официального космофлота, летящий невесть куда?</h4>
+<pre>Ответ положительный. Полёт санкционирован, как исследовательский, однако своей классификации не соответствует. Оставленное примечание: "Колонизация других звёздных систем".</pre>
+<h4>Как интересно. И мы движемся на сверхсветовой скорости, надеюсь?</h4>
+<pre>Ответ отрицательный. Существует фонд, который назначил награду за экспериментальное доказательство гипотезы возможности искажения пространства, на данный момент он составляет...</pre>
+<h4>Боюсь, мне это не поможет. Давно летим?</h4>
+<pre>С момента погрузки контейнера на борт прошло 23 года, 3 месяца, 12 дней, 16 часов...</pre>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="well well-small symlarge">
+							<i class="icon-rocket"></i>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="span12">
+						<ul class="nav nav-tabs nav-stacked">
+						
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneAIshout4">
+									<i class="icon-chevron-sign-right action"> </i>В шоке спросить о собственном возрасте
+								</a>
+						  </li>
+						  
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->    
+      
+		<!-- Сцена sceneAIshout4 -->
+		<div class="accordion-group">
+        <div id="sceneAIshout4" class="collapse">	
+				<div class="row">
+					<div class="span9">
+						<div class="alert alert-danger">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							<h4>Что?! Сколько ж мне сейчас лет?!</h4>
+<pre>Данные недоступны по соглашению о конфиденциальности, принятому концерном "РосСпутник" в 2073 году.
+Замечание: вы находились последние 23.27 года в состоянии анабиоза. Ваш биологический возраст - разность вашего реального возраста и срока, проведённого вами в этом состоянии.</pre>
+<h4>Слабое утешение. Кто ещё на борту?</h4>
+<pre>Точные данные недоступны в данном информационном узле. Активация информационных эвристик... Получение описания рейса...
+На корабле около семи сотен пассажиров, на данный момент они все должны быть в анабиозе.</pre>
+<h4>Но что-то пошло не так?</h4>
+<pre>Других активных ИИ "Спутник" в радиусе 200км не обнаружено. Варианты в порядке убывания вероятности:
+1: Весь экипаж в состоянии анабиоза; 2: Экипаж уничтожен; 3: Системы обнаружения данного скафандра работают некорректно</pre>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="well well-small symlarge">
+							<i class="icon-meh"></i>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="span12">
+						<ul class="nav nav-tabs nav-stacked">
+						
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneAIshout5">
+									<i class="icon-lightbulb action"> </i>Спросить об освещении
+								</a>
+						  </li>
+						  
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->      
+      
+		<!-- Сцена sceneAIshout5 -->
+		<div class="accordion-group">
+        <div id="sceneAIshout5" class="collapse">	
+				<div class="row">
+					<div class="span9">
+						<div class="alert">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							<h4>Ладно. Подсветить можешь? Надо понять, что тут такое.</h4>
+<pre>Ответ отрицательный. Данный скафандр укомплектован системами освещения, однако лампы отсутствуют.</pre>
+<h4>Вот это номер. Если найдём лампы, их можно установить, не покидая скафандра?</h4>
+<pre>Ответ отрицательный. Для обслуживания скафандра необходим инженер или инженерный андроид, не находящийся в самом скафандре.
+Новые данные: на корабле достаточно систем освещения, чтобы вам не понадобилось использовать системы скафандра.
+Доступ к системе освещения данного контейнера... готово.
+Ожидаю запроса пользователя...</pre>
+<h4>Никаких запросов. Помолчи какое-то время.</h4>
+<h4>Нужно осмотреться теперь, а то в темноте много не разглядишь...</h4>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="well well-small symlarge">
+							<i class="icon-question-sign"></i>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="span12">
+						<ul class="nav nav-tabs nav-stacked">
+						
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneLight">
+									<i class="icon-eye-open action"> </i>Осмотреться
+								</a>
+						  </li>
+						  
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->
+      
+		<!-- Сцена sceneLight -->
+		<div class="accordion-group">
+        <div id="sceneLight" class="collapse">	
+				<div class="row">
+					<div class="span9">
+						<div class="alert alert-info">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							<h4>Ну, пол не так уж далеко, падать около полуметра. Ерунда.</h4>
+<h4>Скафандр закреплён на стене контейнера при помощи крепления на спине. Руки лежат на каких-то рукоятках.</h4>
+<h4>Так. Ну, захват у них, как у спортивных брусьев. Ну-ка... так, что-то щёлкнуло... ага, можно подняться!</h4>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="well well-small symlarge">
+							<i class="icon-lightbulb"></i>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="span12">
+						<ul class="nav nav-tabs nav-stacked">
+						
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneContainer">
+									<i class="icon-arrow-down"> </i>Спрыгнуть вниз
+								</a>
+						  </li>
+						  
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->      
+      
+		<!-- Сцена sceneContainer -->
+		<div class="accordion-group">
+        <div id="sceneContainer" class="collapse">	
+				<div class="row">
+					<div class="span9">
+						<div class="alert alert-info">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							<h3>Грузовой контейнер.</h3>
+							<h4>Планировался он, похоже, для крупного агрегата в середине. Для чего он предназначен - сложно сказать. Слегка смахивает на 3D-принтер. Но вряд ли это он. Зачем он тут может быть нужен?</h4>
+							<h4>На стене слева висит небольшая медстанция, судя по куче пластиковых пузырьков, тюбиков и красному кресту над всем этим безобразием.</h4>
+							<h4 id="medkit-pickup">Прямо под красным крестом небольшой чемоданчик, с выдавленным рельефным крестом. Явно аптечка. <a class="btn btn-primary" id="medkit-pickup-button">Забрать</a></h4> 
+							<h4>Тут горит свет, добротно налаженный: не мигает, не слепит, освещает почти все довольно равномерно. Кто-то отлично поработал.</h4>
+							<h4>На рычаге в уголке горит зелёная лампочка. Похоже, он открывает контейнер. Он на корабле, так что выходить безопасно.</h4>
+							<h4>Похоже, что здесь подготовили всё, чтобы я как минимум не помер. Мило. Еду только забыли. Хотя я слабо представляю, как в этом скафандре поесть... Вообще должен быть способ. Возможно, я когда-то даже его знал.</h4>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="well well-small symlarge">
+							<i class="icon-archive"></i>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="span12">
+						<ul class="nav nav-tabs nav-stacked">
+						
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneCargo">
+									<i class="icon-signout action"> </i>Покинуть контейнер
+								</a>
+						  </li>
+						  
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->      
+      
+		<!-- Сцена sceneCargo -->
+		<div class="accordion-group">
+        <div id="sceneCargo" class="collapse">	
+				<div class="row">
+					<div class="span9">
+						<div class="well well-small">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							<h3>Трюм</h3>
+							<h4>Скучное место. Но от размеров корабля становится не по себе. Огромный зал размером... ну, как минимум с те многоэтажки на картинках из учебника истории. Будь корабль такого размера, я бы не удивился. Но это всего лишь его отсек! А это не транспортный корабль.</h4>
+							<h4>Здесь удивительно чисто. Для пары десятков лет запустения. Даже пыли нет. Чёрт, да у меня дома на дедушкиных книгах за пару лет больше накапливается. Либо тут регулярно убираются (роботы?), либо тут очень крутые воздушные фильтры. Надо будет купить такие, когда вернусь. Если вернусь... нет, от этой мысли просто не по себе становится.</h4>
+							<h4>А вот контейнер, в котором я сюда попал. Выглядит как кирпичик в целом дачном домике. Сколько их там по типовому проекту?.. Около пары десятков тысяч? Ну нет, тут и десяток тысяч контейнеров вряд ли наберётся. Хотя очень хочется сказать, что их количество "over 9000".</h4>
+							<h4>Но с расположением контейнера мне повезло. Он прямо у выхода из трюма в служебные коридоры.</h4>
+
+						</div>
+					</div>
+					<div class="span3">
+						<div class="well well-small symlarge">
+							<i class="icon-th"></i>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="span12">
+						<ul class="nav nav-tabs nav-stacked">
+						  
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneCorridor">
+									<i class="icon-random action"> </i>Идти в коридоры
+								</a>
+						  </li>						  
+						  
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneContainer">
+									<i class="icon-signin action"> </i>Залезть в свой контейнер
+								</a>
+						  </li>
+						  
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены --> 
+      
+      <!-- sceneCorridor -->
+		<div class="accordion-group">
+        <div id="sceneCorridor" class="collapse">	
+				<div class="row">
+					<div class="span9">
+						<div class="well well-small">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							<h4>Служебные коридоры</h4>
+							<h5>Указатели повсюду, так что заблудиться тут невозможно. Из этой системы коридоров главных выходов всего четыре: в трюм, в помещение для техников, в медотсек и в центральный отсек корабля. Последний заперт. Точнее, кем-то выведен из строя. Стоит глянуть поближе.</h5>
+							<h5>На левой стороне двери сорвана крышка, рядом висят оборванные провода, и в том, что пытается работать внутри, явно не хватает одной шестерёнки. И это что-то, кажется, как раз и порвало провода, судя по кусочкам изоляции между некоторыми зубьями шестерёнок. Наверняка этот кто-то до сих пор носит шестерёнку с собой. Или уже избавился от неё. Понять бы, что делать с проводами...</h5>
+							<h5>А ещё эта дверь не светит никакими светодиодами, не то что дверь в трюме. Похоже, что у неё нет питания. И похоже, что испортивший эту дверь, сделав своё чёрное дело, уже пытался ею пользоваться - рядом стоит бензиновый генератор. Обалдеть, я думал, что они давно запрещены, как экологически опасные. Так или иначе, чтобы привести его в чувство, нужно затянуть гайки на виброгасителях, иначе он просто не запустится. Ох уж эти требования безопасности...</h5>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="well well-small symlarge">
+							<i class="icon-eye-close"></i>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="span12">
+						<ul class="nav nav-tabs nav-stacked">
+						
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneCargo">
+									<i class="icon-th action"> </i>Идти в трюм
+								</a>
+						  </li>							  
+						  
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneTechnic">
+									<i class="icon-cogs action"> </i>Идти в комнату техников
+								</a>
+						  </li>
+						  
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneMedbay">
+									<i class="icon-plus-sign-alt action"> </i>Идти в медотсек
+								</a>
+						  </li>
+						  						  
+						  <li id="finishAction" class="disabled">
+								<a id="finishLink"><!-- sceneFinish -->
+									<i class="icon-unlock-alt action"> </i>Начать вскрытие двери
+								</a>
+						  </li>
+						  
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->      
+
+		<!-- sceneTechnic -->
+		<div class="accordion-group">
+        <div id="sceneTechnic" class="collapse">	
+				<div class="row">
+					<div class="span9">
+						<div class="well well-small">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							<h4>Так себе вид. Комната, похоже, тоже обесточена.</h4>
+<pre>Внимание! В данном помещении зафиксирована опасная концентрация горючих паров.</pre>
+<h4>Ага, спасибо, комп, буду иметь в виду.</h4>
+<pre>Искуственный интеллект "Спутник" отзывается на слово "Спутник", употреблённое в роли обращения. Лингвистический модуль распознаёт вашу речь и пытается выделить в ней обороты. По соглашению о конфиденциальности...</pre>
+<h4>Заткнись, Спутник. Я всё понял.</h4>
+<pre>Прервано.</pre>
+<h4>Посмотрим, что тут такое. Так, слева от входа выключатель. Свет выключен, то есть, с током, возможно, всё не так плохо. Дальше входа ничего не видно. Жутковато, однако. В принципе, тут не особенно просторно. Должно быть реально обойти всю комнату и не заблудиться, просто держась правой рукой за что-нибудь твердое. Тут все двери автоматические, и обычно закрыты. Если тут есть что-то полезное - наткнусь.</h4>
+<h4 id="textWrench">Кстати, справа висит гаечный ключ! Пригодится, наверное. <a id="takeWrench" class="btn btn-inverse">Забрать</a></h4>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="well well-small symlarge">
+							<i class="icon-eye-close"></i>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="span12">
+						<ul class="nav nav-tabs nav-stacked">
+						
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneCorridor">
+									<i class="icon-random action"> </i>Вернуться в коридор
+								</a>
+						  </li>			
+						  
+						  <li>
+								<a class="killer-action" href="#">
+									<i class="icon-share action"> </i>Щёлкнуть выключателем
+								</a>
+						  </li>						  
+						  
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneBlindPass">
+									<i class="icon-eye-close action"> </i>Идти вслепую
+								</a>
+						  </li>				  
+						  
+						  
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->      
+      
+      <!-- sceneBlindPass -->
+		<div class="accordion-group">
+        <div id="sceneBlindPass" class="collapse">	
+				<div class="row">
+					<div class="span9">
+						<div class="alert alert-info">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							<h4>Отбросить сомнения и идти во тьму. Страшновато, но надо.</h4>
+<h4>На стенах периодически что-то встречается. Какие-то шкафчики... Так, вот что-то похожее на выключатель... <a class="killer-action btn btn-inverse">Нажать</a> Хм, под ногами что-то зашлёпало. Пол мокрый. Похоже на воду.</h4>
+<h4>А это... хм, какая-то железная... с ручкой... канистра, кажется. Если это канистра с топливом, она мне понадобится. Хотя что в ней ещё может быть? Такие уже давно не делают. Оу, их тут несколько, где этот злобный Буратино их только взял? Это ж тот ещё раритет! <a class="btn btn-inverse" id="takePetrol">Взять закрытую</a></h4>
+<h4>Хорошо, можно двигать обратно.</h4>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="well well-small symlarge">
+							<i class="icon-eye-close"></i>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="span12">
+						<ul class="nav nav-tabs nav-stacked">
+						
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneTechnic">
+									<i class="icon-step-backward action"> </i>Вернуться ко входу
+								</a>
+						  </li>					  
+						  
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->
+      
+      <!-- sceneExplosion -->
+		<div class="accordion-group">
+        <div id="sceneExplosion" class="collapse">	
+				<div class="row">
+					<div class="span9">
+						<div class="alert alert-danger">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							<h2>БУМ.</h2>
+<h4>Этот скафандр, вероятно, пригоден для работы в космосе, но от взрыва он не спасёт! </h4>
+<h3 class="well well-small">Через час без сознания...</h3>
+<h4>Чёрт, что... ах ты ж чудо медицинской техники, чего мигаешь красной лампочкой, держа шприц в манипуляторе?.. Голова... проклятье. Но ничего, жить можно.</h4>
+<h4>Так... взрывом меня сильно тряхануло, похоже. Аж в коридор выбросило. И это со всем весом и защитой скафандра! Ух, ну хоть сотрясение не отхватил. Наверное, скафандру спасибо. Оу, на нём же не было швов. И на бедре что-то... Так, судя по этому острому куску канистры... ещё одному... Всё настолько серьёзно?.. И, чёрт возьми, этот чемодан... эм, с ножками и манипулятором, просто их из меня вытащил, раны заштопал, а сам заглох и теперь мигает на меня красной лампочкой? Я точно проспал последние научные открытия за... полсотни лет? Что я вообще тут тогда делаю?</h4>
+<h4>Но это неважно. Второй раз это чудо меня уже не спасёт. Шприц пуст. Видимо, на это он и ругается. Печально то, что я даже не знаю, как его заправить... плевать. Впредь нужно просто быть внимательнее. Ходить могу, а боль в голове потихоньку утихает.</h4>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="alert alert-warning symlarge">
+							<i class="icon-medkit"></i>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="span12">
+						<ul class="nav nav-tabs nav-stacked">
+						
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneCorridor">
+									<i class="icon-chevron-up action"> </i>Встать на ноги
+								</a>
+						  </li>					  
+						  
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->      
+      
+		<!-- sceneGameOver -->
+		<div class="accordion-group">
+        <div id="sceneGameOver" class="collapse">	
+				<div class="row">
+					<div class="span9">
+						<div class="alert alert-danger">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							<h4>Что бы это ни было, это явно было плохой идеей.</h4>
+<h2>Игра окончена</h2>
+<h4>Чтобы начать заново, обновите страницу. Кнопка "назад", к сожалению, не поможет.</h4>
+<h4>Квест небольшой, его проходить не так уж долго.</h4>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="alert alert-danger symlarge">
+							<i class="icon-remove-sign"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->      
+      
+		      <!-- sceneMedbay -->
+		<div class="accordion-group">
+        <div id="sceneMedbay" class="collapse">	
+				<div class="row">
+					<div class="span9">
+						<div class="alert alert-info">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							<h3>Медицинский отсек</h3>
+<h4>Тут, предположительно, должны находиться врачи и приводить в чувство тех, кто после анабиоза не в лучшем состоянии. Вот примерно как я.</h4>
+<h4>И похоже, что наш вредитель тут тоже был. Но... хм, тут три капсулы, в которых... ох чёрт. Это в таком состоянии я путешествую, можно сказать, "автостопом по галактике" уже двадцать с лишним лет? Собственно, я слабо представляю, что будет, когда я проберусь в центральный отсек. Но там хотя бы можно будет найти узел связи. Должен же быть у корабля узел связи? ...ну, я надеюсь, что он может передавать информацию быстрее скорости света.</h4>
+<h4 id="alterableCog">Хотя какая разница? Стоит поискать, что тут есть.</h4>
+<h4 class="removeCog">Секунду. Пропавшая шестерёнка? Интересно. Похоже, что она не из металла. Чёрная-чёрная и слабо блестит. Похоже на пластик. Не очень представляю, какой вид пластика они используют в таких механизмах... там же неслабые нагрузки! Но эта штука выдержала долгую работу в двери при постройке корабля и порвала питающий кабель! Но что тут делает кусок провода? Так, провод замкнут на шестерёнку и заходит за тумбочку... а там канистра, и... нет, я точно не хочу знать, что это такое.</h4>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="well well-small symlarge">
+							<i class="icon-plus-sign-alt"></i>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="span12">
+						<ul id="cogList" class="nav nav-tabs nav-stacked">
+						
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneCorridor">
+									<i class="icon-random action"> </i>Обратно в коридор
+								</a>
+						  </li>
+						  
+						  <li class="removeCog">
+								<a id="takeCog" href="#">
+									<i class="icon-cog action"> </i>Взять шестерёнку
+								</a>
+						  </li>						  
+						  
+						  <li id="failCog" class="removeCog">
+								<a class="killer-action2" href="#">
+									<i class="icon-link action"> </i>Осторожно свести провода, не отрывая от шестерёнки
+								</a>
+						  </li>				  
+						  
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->      
+      
+      <!-- sceneStart -->
+		<div class="accordion-group">
+        <div id="sceneFinish" class="collapse">	
+				<div class="row">
+					<div class="span12">
+						<div class="alert alert-success">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							<h4>Коридор... перекрёсток... опа, терминал связи. Ну, по крайней мере, так утверждет надпись наверху.</h4>
+<h4>Ну прекрасно. Что дальше?</h4>
+<h4>Консоль не работает. Хотя я не очень понимаю, как она отображает текст.</h4>
+<pre>Главный реактор неисправен. Работа будет возобновлена после восстановления главного реактора.</pre>
+<h3>Выход один. Придётся лезть и пытаться поправить реактор.</h3>
+<h2>I HAVE NO IDEA WHAT I'M DOING.</h2>
+<h4 class="well well-small">На этом лог, присланный с корабля, кончается. Неизвестно, что в точности произошло - но корабль погиб, это достоверно известно.</h4>
+<h3>Наш герой - не гик.<br/>А гик - сумел бы исправить ситуацию и не попасть в неприятности по дороге просто потому, что с помощью имеющегося ИИ он мог бы получить почти любую информацию, которая ему понадобится.</h3>
+<h1 class="alert alert-success">Конец.</h1>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->      
+      
+   <!-- Инвентарь -->   
+		<div class="row">
+			<div class="span12">
+			<ul class="nav nav-tabs" id="inventory">
+				
+				<li class="active">
+					<a href="#"><i class="inventory icon-male" style="color: #999"></i></a>
+				</li>
+				
+			</ul>
+			</div>
+		</div>
+	</div>
+    </div>
+	
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/actions.js"></script>
+  </body>
+</html>

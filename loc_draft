@@ -1,0 +1,37 @@
+      <!-- sceneStart -->
+		<div class="accordion-group">
+        <div id="sceneStart" class="collapse">	
+				<div class="row">
+					<div class="span9">
+						<div class="alert alert-info">
+						<!--Вариации: "well well-small" - серый,-->
+						<!--"alert"+: "" - желтый-->
+						<!--"alert-success" - зелёный,-->
+						<!--"alert-danger" - красный,-->
+						<!--"alert-info" - синий. -->
+							
+						</div>
+					</div>
+					<div class="span3">
+						<div class="well well-small symlarge">
+							<i class="icon-eye-close"></i>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="span12">
+						<ul class="nav nav-tabs nav-stacked">
+						
+						  <li>
+								<a data-toggle="collapse" data-parent="#main" href="#sceneCargo">
+									<i class="icon-th action"> </i>Идти в трюм
+								</a>
+						  </li>					  
+						  
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!-- Конец сцены -->
