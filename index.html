@@ -1,16 +1,17 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Falling Apart
 ---
 
 <div id="home">
-	<h1>Blog Posts</h1>
-	<div class="posts">
-	{% for post in site.posts %}
-		<h4">{{ post.title }}</h4>
-		{{ post.content }}
+	<div class="scenes">
+	{% for scene in site.posts %}
+		<h4">{{ scene.title }}</h4>
+		<div class="{{ scene.class }}">
+		{{ scene.content }}
+		</div>
 		<div class="btn-group-vertical">
-		{% for link in post.links %}
+		{% for link in scene.links %}
 				<a	class="btn btn-default btn-block"
 					data-toggle="collapse"
 					data-target="#{{ link.goto }}">

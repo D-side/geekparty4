@@ -1,8 +1,6 @@
 ---
 title: sceneStart
-layout: post
-date:   2013-09-19 12:04:42
-categories: jekyll update
+class: well well-small text-muted
 links:
 - text: Продолжить
   icon: chevron-right
