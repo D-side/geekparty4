@@ -21,7 +21,7 @@ title: Falling Apart
 			</div>
 			<div class="btn-group-vertical">
 			{% for link in scene.links %}
-				<a	class="btn btn-default btn-block"
+				<a	class="btn btn-default btn-block {{ link.class }}"
 				data-toggle="collapse"
 				data-parent="#scenes"
 				data-target="#{{ link.goto }}">
@@ -40,9 +40,6 @@ title: Falling Apart
 				
 				<li class="active">
 					<a href="#"><i class="inventory icon-male" style="color: #999"></i></a>
-				</li>
-				<li>
-					<a href="#"><i class="inventory icon-medkit"></i></a>
 				</li>
 			</ul>
 			</div>

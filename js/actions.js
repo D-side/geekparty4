@@ -1,8 +1,11 @@
 function checkEnd() {
 	if (($("#itemPetrol").length > 0) && ($("#itemCog").length > 0) && ($("#itemWrench").length > 0))
 		{
-				$("#finishAction").removeClass("disabled");
-				$("#finishAction").html('<a data-toggle="collapse" data-parent="#main" href="#sceneFinish"><i class="icon-unlock-alt action"> </i>Начать вскрытие двери</a>');
+				$(".finishLink").html('<i class="icon-unlock-alt action"> </i>Начать вскрытие двери');
+				$(".finishLink").attr("data-toggle", "collapse");
+				$(".finishLink").attr("data-target", "#sceneFinish");
+				$(".finishLink").attr("data-parent", "scenes");
+				$(".finishLink").removeClass("disabled");
 		}
 	
 	}
