@@ -43,4 +43,16 @@ Here's the meaning of each:
 * `goto`: scene identifier for this link, some other scene's `title`.
 * `class`, `id` - corresponding attributes for the link, added for interactivity through the use of jQuery selectors, allowing to bind actions to them with ease
 
-After heading, scene content follows. Scenes are written in Markdown. If you want, you may use Textile, naming scene files appropriately: `.textile` instead of `.markdown` or `.md`.
+After heading, scene content follows. Scenes are written in Markdown. If you want, you may use Textile, naming scene files appropriately: `*.textile` instead of `*.markdown` or `*.md`.
+
+## How it works
+
+All custom Javascript interactivity is defined in `actions.js`. It depends on `jQuery`, `jQuery UI` and `Twitter Bootstrap` plugins.
+
+Also you might need `_layouts/default.html`, that contains basic page layout, not related to the actual game. Inside this layout, instead of `content`, `index.html` is parsed, that contains all game elements, such as scene list and inventory.
+
+For each scene defined in Jekyll's `site.posts`, it forms an accordion entry, containing main body, icon at the side and list of links, defined in scene files.
+
+If you want, you can modify scene body to use your own variables. I. e. you may add an `image` variable, hooked to `<img src="{{ scene.image }}" />` tag in scene layout. The same applies to any content you may wish to define. `Liquid` tags can reference post variables. Documentation for Liquid template language is avaliable online.
+
+After an accordion of scenes lies an unordered list of items in inventory. It's implemented using custom Javascript, and can be safely removed.
