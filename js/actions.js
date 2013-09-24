@@ -5,8 +5,10 @@ function checkEnd() {
         $(".finishLink").attr("data-target", "#sceneFinish");
         $(".finishLink").attr("data-parent", "#scenes");
         $(".finishLink").removeClass("disabled");
+	$(".finishLink").click(function() {
+            $("#inventory > li").hide('slow');
+        });
     }
-
 }
 
 $("#medkit-pickup-button").click(function () {
