@@ -8,11 +8,11 @@ links:
   goto: sceneCorridor
 - text: Взять шестерёнку
   icon: cog
-  class: removeCog takeСogs
+  class: removeCog
+  id: takeCog
 - text: Осторожно свести провода, не отрывая от шестерёнки
-  class: killer-action2
+  class: killer-action2 removeCog
   icon: link
-default: true
 ---
 <h3>Медицинский отсек</h3>
 <h4>Тут, предположительно, должны находиться врачи и приводить в чувство тех, кто после анабиоза не в лучшем состоянии. Вот примерно как я.</h4>

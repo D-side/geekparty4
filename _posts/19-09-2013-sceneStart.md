@@ -7,7 +7,7 @@ links:
   icon: eye-open
   goto: sceneIntro
 
-default: false
+default: true
 ---
 
 Прохлада.
