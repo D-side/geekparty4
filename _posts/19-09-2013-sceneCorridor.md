@@ -2,18 +2,19 @@
 title: sceneCorridor
 class: well well-sm
 icon: unchecked
-links: - text: Идти в трюм
-         icon: th
-         goto: sceneCargo
-       - text: Идти в комнату техников
-         icon: cogs
-         goto: sceneTechnic
-       - text: Идти в медотсек
-         icon: plus-sign-alt
-         goto: sceneMedbay
-       - text: Вскрыть дверь пока нельзя
-         icon: lock-alt
-         class: finishLink disabled
+links:
+    - text: Идти в трюм
+      icon: th
+      goto: sceneCargo
+    - text: Идти в комнату техников
+      icon: cogs
+      goto: sceneTechnic
+    - text: Идти в медотсек
+      icon: plus-sign-alt
+      goto: sceneMedbay
+    - text: Вскрыть дверь пока нельзя
+      icon: lock-alt
+      class: finishLink disabled
 
 ---
 <h4>Служебные коридоры</h4>
