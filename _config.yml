@@ -1,3 +1,9 @@
 title: Falling apart
-markdown: redcarpet
+markdown: kramdown
 highlighter: null
+url: https://apart.dside.ru
+permalink: ":title"
+collections_dir: .
+collections:
+  scenes:
+    output: false
